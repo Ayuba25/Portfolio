@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namkumba logistics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+    <div class="logo">Namkumba Logistics</div>
+    <nav>
+      <ul>
+        <li><a href="#home" aria-label="Home">Home</a></li>
+        <li><a href="#services" aria-label="Services">Services</a></li>
+        <li><a href="#about" aria-label="About Us">About</a></li>
+        <li><a href="#contact" aria-label="Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" aria-label="Home section">
+    <div class="content">
+      <h1>Reliable Logistics. Trusted Service.</h1>
+      <p>Namkumba Logistics delivers efficient, affordable, and secure transport and freight solutions tailored to your needs.</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+    </div>
+    <div class="image" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Logistics truck on the road" />
+    </div>
+  </section>
+
+  <section id="services" aria-label="Services section">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <article class="service-card" tabindex="0">
+        <h3>Freight & Cargo</h3>
+        <p>Safe and timely transportation of goods across regions with real-time tracking.</p>
+      </article>
+      <article class="service-card" tabindex="0">
+        <h3>Bakkie & Truck Hire</h3>
+        <p>Reliable vehicle hire for all your moving and delivery needs.</p>
+      </article>
+      <article class="service-card" tabindex="0">
+        <h3>Rubble Removal</h3>
+        <p>Quick and efficient clearance of construction debris and waste.</p>
+      </article>
+      <article class="service-card" tabindex="0">
+        <h3>Warehousing</h3>
+        <p>Secure storage solutions tailored to your business requirements.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" aria-label="About us section">
+    <h2>About Us</h2>
+    <p>Namkumba Logistics is committed to delivering top-notch logistics services that help businesses and individuals move goods safely and efficiently. Combining modern technology with experienced personnel, we ensure your cargo is handled with care and professionalism.</p>
+  </section>
+
+  <section id="contact" aria-label="Contact section">
+    <h2>Contact Us</h2>
+    <form action="send-message.php" method="post" aria-label="Contact form">
+      <input type="text" name="name" placeholder="Your Name" required aria-required="true" />
+      <input type="email" name="email" placeholder="Your Email" required aria-required="true" />
+      <textarea name="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Namkumba Logistics. All rights reserved.
+  </footer>
+
+</body>
+</html>
